@@ -15,6 +15,8 @@ public class SessionUtil {
     SqlSessionFactoryBuilder sqlSessionFactoryBuilder = new SqlSessionFactoryBuilder();
     try {
       sqlSessionFactory = sqlSessionFactoryBuilder.build(Resources.getResourceAsStream("mybatis-config.xml"));
+
+
     } catch (IOException e) {
       e.printStackTrace();
     }
